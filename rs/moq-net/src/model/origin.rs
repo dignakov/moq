@@ -2324,6 +2324,7 @@ async fn run_front(task: FrontTask) {
 		Demand(Arc<str>),
 		Deadline,
 		Table,
+		Unused,
 	}
 
 	// The front serves its broadcast on demand: every track a reader names is
@@ -2476,7 +2477,7 @@ async fn run_front(task: FrontTask) {
 					}
 					Action::Resolve => {
 						if let Ok(mut pending) = request.write() {
-							pending.resolved.get_or_insert(Ok(broadcast.consume()));
+							pending.resolved.get_or_insert(Ok(broadcast.consume().weak()));
 						}
 					}
 					Action::Query { track: name, source } => {
@@ -2607,7 +2608,7 @@ async fn run_front(task: FrontTask) {
 			}
 			if let Some((route, pending)) = &upstream
 				&& let Poll::Ready(result) = pending.poll(waiter, |p| match &p.resolved {
-					Some(result) => Poll::Ready(result.clone()),
+					Some(result) => Poll::Ready(result.as_ref().map(|weak| weak.consume()).map_err(Clone::clone)),
 					None => Poll::Pending,
 				}) {
 				return Poll::Ready(Step::Resolved(
@@ -2664,6 +2665,10 @@ async fn run_front(task: FrontTask) {
 			}
 			if deadline.poll(waiter).is_ready() {
 				return Poll::Ready(Step::Deadline);
+			}
+			// No consumer, no requester, and every track forgotten: nothing can reach the front.
+			if tracks.is_empty() && broadcast.poll_unconsumed(waiter).is_ready() && request.poll_unused(waiter).is_ready() {
+				return Poll::Ready(Step::Unused);
 			}
 			watch.poll_changed(waiter, seen).map(|()| Step::Table)
 		})
@@ -2775,6 +2780,21 @@ async fn run_front(task: FrontTask) {
 						now: timers.now(),
 					},
 				}
+			}
+			Step::Unused => {
+				// Unlisted under the lock requesters join by, so none joins a front that is ending.
+				// Rechecked there: a requester that joined, or a track a consumer asked for just
+				// before letting go, keeps the front.
+				let mut state = shared.lock();
+				if broadcast.is_consumed() || request.is_used() || broadcast.demand().is_used() {
+					continue;
+				}
+				let key = (path.clone(), horizon);
+				if state.fronts.get(&key).is_some_and(|front| front.request.same_channel(&request)) {
+					state.fronts.remove(&key);
+				}
+				drop(state);
+				Event::Closed
 			}
 			Step::Deadline => {
 				// Cleared here so a fired deadline cannot keep firing; the machine
@@ -3459,7 +3479,7 @@ impl Quiet {
 /// flag, so an awaiting requester still observes the final result.
 #[derive(Default)]
 struct PendingBroadcast {
-	resolved: Option<Result<broadcast::Consumer, Error>>,
+	resolved: Option<Result<broadcast::WeakConsumer, Error>>,
 }
 
 /// A served route, from [`Producer::dynamic`]: advertises a path prefix and
@@ -3581,7 +3601,7 @@ impl ServeState {
 		};
 		state.requests.remove_if(path, |p| p.same_channel(producer));
 		if let Ok(mut pending) = producer.write() {
-			pending.resolved.get_or_insert(resolved);
+			pending.resolved.get_or_insert(resolved.map(|broadcast| broadcast.weak()));
 			drop(state);
 		}
 	}
@@ -3723,7 +3743,7 @@ impl Requesting {
 			RequestState::Failed(error) => Poll::Ready(Err(error.clone())),
 			RequestState::Pending(consumer) => Poll::Ready(
 				match ready!(consumer.poll(waiter, |state| match &state.resolved {
-					Some(result) => Poll::Ready(result.clone()),
+					Some(result) => Poll::Ready(result.as_ref().map(|weak| weak.consume()).map_err(Clone::clone)),
 					None => Poll::Pending,
 				})) {
 					Ok(result) => result.map(|broadcast| self.hand_out(broadcast)),

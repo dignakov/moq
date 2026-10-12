@@ -1344,6 +1344,7 @@ impl Producer {
 	/// [`Request`]), which threads the broadcast's `Arc<broadcast::Info>` down. The
 	/// track opens its cache account against that broadcast's origin pool, and every
 	/// group it creates charges into it.
+	#[track_caller]
 	pub(crate) fn new(
 		broadcast: Arc<broadcast::Info>,
 		name: impl Into<Arc<str>>,
@@ -1354,6 +1355,7 @@ impl Producer {
 		let state = TrackState::spawn(broadcast.clone());
 		state.write().ok().expect("a new track is open").accept(info.clone());
 		let alive = Alive::new(name.clone(), state.clone());
+		let _ = alive.minted.set(std::panic::Location::caller());
 		alive.publish(None);
 		Self {
 			name,
@@ -1989,6 +1991,10 @@ struct Alive {
 	// Ingress subscription for this track, opened by the tagged producer that claimed
 	// it and closed when this guard drops.
 	stats: OnceLock<stats::Subscription>,
+
+	// Diagnostics only: the source location that minted the first `Producer` for this
+	// track (`Producer::new` or `Request::accept`), named by the drop warning.
+	minted: OnceLock<&'static std::panic::Location<'static>>,
 }
 
 impl Alive {
@@ -1998,6 +2004,7 @@ impl Alive {
 			state,
 			published: Default::default(),
 			stats: Default::default(),
+			minted: Default::default(),
 		})
 	}
 
@@ -2040,6 +2047,11 @@ impl Drop for Alive {
 				}
 				tracing::warn!(
 					track = %self.name,
+					broadcast = %state.broadcast.path,
+					minted = ?self.minted.get(),
+					routes = state.routes.is_some(),
+					claimed = state.claimed,
+					backtrace = %std::backtrace::Backtrace::force_capture(),
 					"track::Producer dropped without finish() or abort()"
 				);
 				// See `abort`: keep the frame boundary once its open group goes away.
@@ -2053,6 +2065,11 @@ impl Drop for Alive {
 				}
 				tracing::warn!(
 					track = %self.name,
+					broadcast = %state.broadcast.path,
+					minted = ?self.minted.get(),
+					routes = state.routes.is_some(),
+					claimed = state.claimed,
+					backtrace = %std::backtrace::Backtrace::force_capture(),
 					"track::Producer dropped without finish() or abort()"
 				);
 			}
@@ -4176,6 +4193,7 @@ impl Request {
 	/// (`None` for the defaults). If the track was already aborted, the returned
 	/// [`Producer`] is inert: writes fail with the abort error, as if it had been
 	/// aborted immediately after accepting.
+	#[track_caller]
 	pub fn accept(self, info: impl Into<Option<Info>>) -> Producer {
 		let info = info.into().unwrap_or_default();
 		// A closed state means the track was aborted under us. Mirror `reject` and
@@ -4187,6 +4205,7 @@ impl Request {
 		}
 		// Accepting the request creates the track producer: count it as one ingress
 		// subscription (closed when the last handle drops). No-op when untagged.
+		let _ = self.alive.minted.set(std::panic::Location::caller());
 		self.alive.publish(Some(&self.stats));
 		Producer {
 			name: self.name,

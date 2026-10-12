@@ -365,6 +365,16 @@ impl Producer {
 	pub fn is_clone(&self, other: &Self) -> bool {
 		self.state.same_channel(&other.state)
 	}
+
+	/// Ready once no [`Consumer`] of this broadcast is left (or it closed).
+	pub(crate) fn poll_unconsumed(&self, waiter: &kio::Waiter) -> Poll<()> {
+		self.alive.token.poll_unused(waiter).map(|_| ())
+	}
+
+	/// Whether any [`Consumer`] of this broadcast is alive.
+	pub(crate) fn is_consumed(&self) -> bool {
+		self.alive.token.is_used()
+	}
 }
 
 /// Ends the broadcast on [`Producer::close`] or when the last [`Producer`] or
