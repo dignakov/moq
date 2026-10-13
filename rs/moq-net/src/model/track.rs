@@ -2051,7 +2051,6 @@ impl Drop for Alive {
 					minted = ?self.minted.get(),
 					routes = state.routes.is_some(),
 					claimed = state.claimed,
-					backtrace = %std::backtrace::Backtrace::force_capture(),
 					"track::Producer dropped without finish() or abort()"
 				);
 				// See `abort`: keep the frame boundary once its open group goes away.
@@ -2069,7 +2068,6 @@ impl Drop for Alive {
 					minted = ?self.minted.get(),
 					routes = state.routes.is_some(),
 					claimed = state.claimed,
-					backtrace = %std::backtrace::Backtrace::force_capture(),
 					"track::Producer dropped without finish() or abort()"
 				);
 			}
