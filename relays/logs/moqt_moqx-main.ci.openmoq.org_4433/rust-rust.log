@@ -1,13 +1,13 @@
-[2m2026-11-03T03:28:39.077316Z[0m [32m INFO[0m [2mmoq_relay::cluster[0m[2m:[0m cluster initialized [3mhop_id[0m[2m=[0m3743944764626662 [3mconfigured[0m[2m=[0mfalse
-[2m2026-11-03T03:28:39.079611Z[0m [33m WARN[0m [2mmoq_sock::bind[0m[2m:[0m UDP receive buffer is smaller than requested; raise `net.core.rmem_max` or expect packet loss under load [3mwanted[0m[2m=[0m8388608 [3mgranted[0m[2m=[0m4194304
-[2m2026-11-03T03:28:39.079621Z[0m [33m WARN[0m [2mmoq_sock::bind[0m[2m:[0m UDP send buffer is smaller than requested; raise `net.core.wmem_max` or expect packet loss under load [3mwanted[0m[2m=[0m8388608 [3mgranted[0m[2m=[0m4194304
-[2m2026-11-03T03:28:39.081927Z[0m [32m INFO[0m [2mmoq_tokio::connection[0m[2m:[0m connecting [3mpeer[0m[2m=[0mmoqt://moqx-main.ci.openmoq.org:4433
-[2m2026-11-03T03:28:39.082076Z[0m [32m INFO[0m [2mmoq_relay::cluster[0m[2m:[0m no cluster peers configured; running standalone
-[2m2026-11-03T03:28:39.157426Z[0m [32m INFO[0m [2mmoq_tokio::client[0m[2m:[0m connected [3mversion[0m[2m=[0mmoq-transport-16
-[2m2026-11-03T03:28:39.157434Z[0m [32m INFO[0m [2mmoq_tokio::connection[0m[2m:[0m connected [3mpeer[0m[2m=[0mmoqt://moqx-main.ci.openmoq.org:4433
-[2m2026-11-03T03:28:39.175278Z[0m [32m INFO[0m [2mmoq_net::ietf::subscriber[0m[2m:[0m subscribe started [3mbroadcast[0m[2m=[0msmoke-rust-4170-7692.hang [3mtrack[0m[2m=[0mcatalog.json
-[2m2026-11-03T03:28:39.419242Z[0m [32m INFO[0m [2mmoq_net::ietf::subscriber[0m[2m:[0m subscribe started [3mbroadcast[0m[2m=[0msmoke-rust-4170-7692.hang [3mtrack[0m[2m=[0m0.avc3
-[2m2026-11-03T03:28:40.374367Z[0m [32m INFO[0m [2mmoq_net::ietf::subscriber[0m[2m:[0m subscribe cancelled [3mbroadcast[0m[2m=[0msmoke-rust-4170-7692.hang [3mtrack[0m[2m=[0mcatalog.json
-[2m2026-11-03T03:28:40.374392Z[0m [32m INFO[0m [2mmoq_net::ietf::subscriber[0m[2m:[0m subscribe cancelled [3mbroadcast[0m[2m=[0msmoke-rust-4170-7692.hang [3mtrack[0m[2m=[0m0.avc3
-[2m2026-11-03T03:28:40.374516Z[0m [32m INFO[0m [2mmoq_net::ietf::session[0m[2m:[0m session terminated [3merr[0m[2m=[0mtransport: session error: connection error: closed
+[2m2026-11-03T15:45:18.442001Z[0m [32m INFO[0m [2mmoq_relay::cluster[0m[2m:[0m cluster initialized [3mhop_id[0m[2m=[0m7184613659799052 [3mconfigured[0m[2m=[0mfalse
+[2m2026-11-03T15:45:18.444757Z[0m [33m WARN[0m [2mmoq_sock::bind[0m[2m:[0m UDP receive buffer is smaller than requested; raise `net.core.rmem_max` or expect packet loss under load [3mwanted[0m[2m=[0m8388608 [3mgranted[0m[2m=[0m1048576
+[2m2026-11-03T15:45:18.444769Z[0m [33m WARN[0m [2mmoq_sock::bind[0m[2m:[0m UDP send buffer is smaller than requested; raise `net.core.wmem_max` or expect packet loss under load [3mwanted[0m[2m=[0m8388608 [3mgranted[0m[2m=[0m4194304
+[2m2026-11-03T15:45:18.447553Z[0m [32m INFO[0m [2mmoq_tokio::connection[0m[2m:[0m connecting [3mpeer[0m[2m=[0mmoqt://moqx-main.ci.openmoq.org:4433
+[2m2026-11-03T15:45:18.448101Z[0m [32m INFO[0m [2mmoq_relay::cluster[0m[2m:[0m no cluster peers configured; running standalone
+[2m2026-11-03T15:45:18.590762Z[0m [32m INFO[0m [2mmoq_tokio::client[0m[2m:[0m connected [3mversion[0m[2m=[0mmoq-transport-16
+[2m2026-11-03T15:45:18.590781Z[0m [32m INFO[0m [2mmoq_tokio::connection[0m[2m:[0m connected [3mpeer[0m[2m=[0mmoqt://moqx-main.ci.openmoq.org:4433
+[2m2026-11-03T15:45:18.616375Z[0m [32m INFO[0m [2mmoq_net::ietf::subscriber[0m[2m:[0m subscribe started [3mbroadcast[0m[2m=[0msmoke-rust-3994-14060.hang [3mtrack[0m[2m=[0mcatalog.json
+[2m2026-11-03T15:45:18.777956Z[0m [32m INFO[0m [2mmoq_net::ietf::subscriber[0m[2m:[0m subscribe started [3mbroadcast[0m[2m=[0msmoke-rust-3994-14060.hang [3mtrack[0m[2m=[0m0.avc3
+[2m2026-11-03T15:45:19.736482Z[0m [32m INFO[0m [2mmoq_net::ietf::subscriber[0m[2m:[0m subscribe cancelled [3mbroadcast[0m[2m=[0msmoke-rust-3994-14060.hang [3mtrack[0m[2m=[0mcatalog.json
+[2m2026-11-03T15:45:19.736533Z[0m [32m INFO[0m [2mmoq_net::ietf::subscriber[0m[2m:[0m subscribe cancelled [3mbroadcast[0m[2m=[0msmoke-rust-3994-14060.hang [3mtrack[0m[2m=[0m0.avc3
+[2m2026-11-03T15:45:19.736658Z[0m [32m INFO[0m [2mmoq_net::ietf::session[0m[2m:[0m session terminated [3merr[0m[2m=[0mtransport: session error: connection error: closed
 Error: Broken pipe (os error 32)

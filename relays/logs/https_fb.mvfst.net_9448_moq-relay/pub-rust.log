@@ -1,10 +1,9 @@
-[2m2026-11-03T03:28:40.436379Z[0m [32m INFO[0m [2mmoq_relay::cluster[0m[2m:[0m cluster initialized [3mhop_id[0m[2m=[0m7256944801575027 [3mconfigured[0m[2m=[0mfalse
-[2m2026-11-03T03:28:40.440128Z[0m [33m WARN[0m [2mmoq_sock::bind[0m[2m:[0m UDP receive buffer is smaller than requested; raise `net.core.rmem_max` or expect packet loss under load [3mwanted[0m[2m=[0m8388608 [3mgranted[0m[2m=[0m4194304
-[2m2026-11-03T03:28:40.440139Z[0m [33m WARN[0m [2mmoq_sock::bind[0m[2m:[0m UDP send buffer is smaller than requested; raise `net.core.wmem_max` or expect packet loss under load [3mwanted[0m[2m=[0m8388608 [3mgranted[0m[2m=[0m4194304
-[2m2026-11-03T03:28:40.443076Z[0m [32m INFO[0m [2mmoq_relay::cluster[0m[2m:[0m no cluster peers configured; running standalone
-[2m2026-11-03T03:28:40.443538Z[0m [32m INFO[0m [2mmoq_tokio::connection[0m[2m:[0m connecting [3mpeer[0m[2m=[0mhttps://fb.mvfst.net:9448
-[2m2026-11-03T03:28:40.563826Z[0m [32m INFO[0m [2mmoq_tokio::client[0m[2m:[0m connected [3mversion[0m[2m=[0mmoq-transport-14
-[2m2026-11-03T03:28:40.563838Z[0m [32m INFO[0m [2mmoq_tokio::connection[0m[2m:[0m connected [3mpeer[0m[2m=[0mhttps://fb.mvfst.net:9448
-[2m2026-11-03T03:28:40.654884Z[0m [32m INFO[0m [2mmoq_net::ietf::publisher[0m[2m:[0m subscribe started [3mid[0m[2m=[0m1 [3mbroadcast[0m[2m=[0msmoke-rust-4170-2740.hang [3mtrack[0m[2m=[0mcatalog.json
-[2m2026-11-03T03:28:40.792491Z[0m [32m INFO[0m [2mmoq_net::ietf::publisher[0m[2m:[0m subscribe started [3mid[0m[2m=[0m3 [3mbroadcast[0m[2m=[0msmoke-rust-4170-2740.hang [3mtrack[0m[2m=[0m0.avc3
-[2m2026-11-03T03:28:42.693984Z[0m [32m INFO[0m [2mmoq_net::ietf::publisher[0m[2m:[0m subscribe started [3mid[0m[2m=[0m5 [3mbroadcast[0m[2m=[0msmoke-rust-4170-2740.hang [3mtrack[0m[2m=[0m0.avc3
+[2m2026-11-03T15:45:19.832223Z[0m [32m INFO[0m [2mmoq_relay::cluster[0m[2m:[0m cluster initialized [3mhop_id[0m[2m=[0m6909978347856391 [3mconfigured[0m[2m=[0mfalse
+[2m2026-11-03T15:45:19.836837Z[0m [33m WARN[0m [2mmoq_sock::bind[0m[2m:[0m UDP receive buffer is smaller than requested; raise `net.core.rmem_max` or expect packet loss under load [3mwanted[0m[2m=[0m8388608 [3mgranted[0m[2m=[0m1048576
+[2m2026-11-03T15:45:19.836866Z[0m [33m WARN[0m [2mmoq_sock::bind[0m[2m:[0m UDP send buffer is smaller than requested; raise `net.core.wmem_max` or expect packet loss under load [3mwanted[0m[2m=[0m8388608 [3mgranted[0m[2m=[0m4194304
+[2m2026-11-03T15:45:19.840515Z[0m [32m INFO[0m [2mmoq_relay::cluster[0m[2m:[0m no cluster peers configured; running standalone
+[2m2026-11-03T15:45:19.840658Z[0m [32m INFO[0m [2mmoq_tokio::connection[0m[2m:[0m connecting [3mpeer[0m[2m=[0mhttps://fb.mvfst.net:9448
+[2m2026-11-03T15:45:20.003582Z[0m [32m INFO[0m [2mmoq_tokio::client[0m[2m:[0m connected [3mversion[0m[2m=[0mmoq-transport-14
+[2m2026-11-03T15:45:20.003606Z[0m [32m INFO[0m [2mmoq_tokio::connection[0m[2m:[0m connected [3mpeer[0m[2m=[0mhttps://fb.mvfst.net:9448
+[2m2026-11-03T15:45:20.179010Z[0m [32m INFO[0m [2mmoq_net::ietf::publisher[0m[2m:[0m subscribe started [3mid[0m[2m=[0m1 [3mbroadcast[0m[2m=[0msmoke-rust-3994-14475.hang [3mtrack[0m[2m=[0mcatalog.json
+[2m2026-11-03T15:45:22.117032Z[0m [32m INFO[0m [2mmoq_net::ietf::publisher[0m[2m:[0m subscribe started [3mid[0m[2m=[0m3 [3mbroadcast[0m[2m=[0msmoke-rust-3994-14475.hang [3mtrack[0m[2m=[0m0.avc3
