@@ -1,0 +1,19 @@
+publishing smoke-js-web-4170-29230.hang (fake camera, vite) to https://quichemoq.dev:443
+[page] Failed to establish a connection to https://quichemoq.dev/: net::ERR_CONNECTION_REFUSED.
+[page] connection error: AggregateError: All promises were rejected
+[page] Failed to establish a connection to https://quichemoq.dev/: net::ERR_CONNECTION_REFUSED.
+[page] connection error: AggregateError: All promises were rejected
+[page] Failed to establish a connection to https://quichemoq.dev/: net::ERR_CONNECTION_REFUSED.
+[page] connection error: AggregateError: All promises were rejected
+[page] Failed to establish a connection to https://quichemoq.dev/: net::ERR_CONNECTION_REFUSED.
+[page] connection error: AggregateError: All promises were rejected
+[page] Failed to establish a connection to https://quichemoq.dev/: net::ERR_CONNECTION_REFUSED.
+[page] connection error: AggregateError: All promises were rejected
+[page] Failed to establish a connection to https://quichemoq.dev/: net::ERR_CONNECTION_REFUSED.
+[page] connection error: AggregateError: All promises were rejected
+[page] Failed to establish a connection to https://quichemoq.dev/: net::ERR_CONNECTION_REFUSED.
+[page] connection error: AggregateError: All promises were rejected
+[page] Failed to establish a connection to https://quichemoq.dev/: net::ERR_CONNECTION_REFUSED.
+[page] connection error: AggregateError: All promises were rejected
+[page] Failed to establish a connection to https://quichemoq.dev/: net::ERR_CONNECTION_REFUSED.
+[page] connection error: AggregateError: All promises were rejected
