@@ -1,34 +1,19 @@
 [page] negotiated protocol: moqt-16
 [page] subscribe_namespace written: requestId=0
-[page] announced: broadcast=smoke-rust-4193-8005.hang active=true
-[page] subscribe start: id=2 broadcast=smoke-rust-4193-8005.hang track=catalog.json
-[page] announced: broadcast=aiomoqt active=true
-[page] subscribe written: id=2 broadcast=smoke-rust-4193-8005.hang track=catalog.json
-[page] subscribe ok: id=2 broadcast=smoke-rust-4193-8005.hang track=catalog.json
-[page] received catalog hang smoke-rust-4193-8005.hang {video: Object, audio: Object, archive: Object, clock: Object}
-[page] subscribe start: id=4 broadcast=smoke-rust-4193-8005.hang track=0.avc3
-[page] subscribe written: id=4 broadcast=smoke-rust-4193-8005.hang track=0.avc3
-[page] subscribe ok: id=4 broadcast=smoke-rust-4193-8005.hang track=0.avc3
-[page] dropping a group with no head: alias=4 group=2
+[page] announced: broadcast=smoke-rust-4000-21618.hang active=true
+[page] subscribe start: id=2 broadcast=smoke-rust-4000-21618.hang track=catalog.json
+[page] subscribe written: id=2 broadcast=smoke-rust-4000-21618.hang track=catalog.json
+[page] subscribe ok: id=2 broadcast=smoke-rust-4000-21618.hang track=catalog.json
+[page] received catalog hang smoke-rust-4000-21618.hang {video: Object, audio: Object, archive: Object, clock: Object}
+[page] subscribe start: id=4 broadcast=smoke-rust-4000-21618.hang track=0.avc3
+[page] subscribe written: id=4 broadcast=smoke-rust-4000-21618.hang track=0.avc3
+[page] subscribe ok: id=4 broadcast=smoke-rust-4000-21618.hang track=0.avc3
+[page] dropping a group with no head: alias=3 group=2
 [page] adapter: closing stream requestId=4
-[page] subscribe error: id=4 broadcast=smoke-rust-4193-8005.hang track=0.avc3 error=publish done: status=0x0 reason=Write after stream complete or reset
+[page] subscribe error: id=4 broadcast=smoke-rust-4000-21618.hang track=0.avc3 error=publish done: status=0x0 reason=Write after stream complete or reset
 [page] spawn error Error: publish done: status=0x0 reason=Write after stream complete or reset
-    at #x (http://localhost:45709/assets/index-QjPCWezJ.js:1:220598)
-[page] received catalog hang smoke-rust-4193-8005.hang {video: Object, audio: Object, archive: Object, clock: Object}
-[page] received catalog hang smoke-rust-4193-8005.hang {video: Object, audio: Object, archive: Object, clock: Object}
-[page] received catalog hang smoke-rust-4193-8005.hang {video: Object, audio: Object, archive: Object, clock: Object}
-[page] announced: broadcast=aiomoqt active=false
-[page] announced: broadcast=moq-test/join/bf8325377f2466514c42594c5116ec39 active=true
-[page] received catalog hang smoke-rust-4193-8005.hang {video: Object, audio: Object, archive: Object, clock: Object}
-[page] announced: broadcast=moq-test/join/bf8325377f2466514c42594c5116ec39 active=false
-[page] announced: broadcast=moq-test/fetch/6de9f8c0c5377a78148c798ed3349fa6 active=true
-[page] announced: broadcast=moq-test/fetch/6de9f8c0c5377a78148c798ed3349fa6 active=false
-[page] announced: broadcast=moq-test/5668/interop/namespace-discovery active=true
-[page] announced: broadcast=moq-test/5668/interop/namespace-discovery active=false
-[page] announced: broadcast=moq-test/data-subgroup-basic/b70e41ce99957d8549451149db4e9ff4 active=true
-[page] announced: broadcast=moq-test/data-subgroup-basic/b70e41ce99957d8549451149db4e9ff4 active=false
-[page] announced: broadcast=moq-test/566a/interop/announce-only active=true
-[page] announced: broadcast=moq-test/566a/interop/announce-only active=false
-[page] announced: broadcast=moq-test/566a/interop/publish-namespace-done active=true
-[page] announced: broadcast=moq-test/566a/interop/publish-namespace-done active=false
-decoded 0 frames from smoke-rust-4193-8005.hang (vite)
+    at #x (http://localhost:44757/assets/index-Ucg5Nghc.js:1:220598)
+[page] received catalog hang smoke-rust-4000-21618.hang {video: Object, audio: Object, archive: Object, clock: Object}
+[page] received catalog hang smoke-rust-4000-21618.hang {video: Object, audio: Object, archive: Object, clock: Object}
+[page] received catalog hang smoke-rust-4000-21618.hang {video: Object, audio: Object, archive: Object, clock: Object}
+decoded 0 frames from smoke-rust-4000-21618.hang (vite)
