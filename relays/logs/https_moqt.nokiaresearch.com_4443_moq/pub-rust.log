@@ -1,9 +1,21 @@
-[2m2026-11-10T16:06:57.664754Z[0m [32m INFO[0m [2mmoq_relay::cluster[0m[2m:[0m cluster initialized [3mhop_id[0m[2m=[0m407803470330359 [3mconfigured[0m[2m=[0mfalse
-[2m2026-11-10T16:06:57.670543Z[0m [33m WARN[0m [2mmoq_sock::bind[0m[2m:[0m UDP receive buffer is smaller than requested; raise `net.core.rmem_max` or expect packet loss under load [3mwanted[0m[2m=[0m8388608 [3mgranted[0m[2m=[0m1048576
-[2m2026-11-10T16:06:57.670565Z[0m [33m WARN[0m [2mmoq_sock::bind[0m[2m:[0m UDP send buffer is smaller than requested; raise `net.core.wmem_max` or expect packet loss under load [3mwanted[0m[2m=[0m8388608 [3mgranted[0m[2m=[0m4194304
-[2m2026-11-10T16:06:57.679272Z[0m [32m INFO[0m [2mmoq_relay::cluster[0m[2m:[0m no cluster peers configured; running standalone
-[2m2026-11-10T16:06:57.682099Z[0m [32m INFO[0m [2mmoq_tokio::connection[0m[2m:[0m connecting [3mpeer[0m[2m=[0mhttps://moqt.nokiaresearch.com:4443
-[2m2026-11-10T16:06:58.206661Z[0m [32m INFO[0m [2mmoq_tokio::client[0m[2m:[0m connected [3mversion[0m[2m=[0mmoq-transport-22
-[2m2026-11-10T16:06:58.206690Z[0m [32m INFO[0m [2mmoq_tokio::connection[0m[2m:[0m connected [3mpeer[0m[2m=[0mhttps://moqt.nokiaresearch.com:4443
-[2m2026-11-10T16:06:58.626362Z[0m [32m INFO[0m [2mmoq_net::ietf::publisher[0m[2m:[0m subscribe started [3mid[0m[2m=[0m1 [3mbroadcast[0m[2m=[0msmoke-rust-4309-8517.hang [3mtrack[0m[2m=[0mcatalog.json
-[2m2026-11-10T16:06:58.903944Z[0m [32m INFO[0m [2mmoq_net::ietf::publisher[0m[2m:[0m subscribe started [3mid[0m[2m=[0m3 [3mbroadcast[0m[2m=[0msmoke-rust-4309-8517.hang [3mtrack[0m[2m=[0m0.avc3
+[2m2026-11-12T16:34:05.312719Z[0m [32m INFO[0m [2mmoq_relay::cluster[0m[2m:[0m cluster initialized [3mhop_id[0m[2m=[0m5803855082092969 [3mconfigured[0m[2m=[0mfalse
+[2m2026-11-12T16:34:05.325719Z[0m [33m WARN[0m [2mmoq_sock::bind[0m[2m:[0m UDP receive buffer is smaller than requested; raise `net.core.rmem_max` or expect packet loss under load [3mwanted[0m[2m=[0m8388608 [3mgranted[0m[2m=[0m1048576
+[2m2026-11-12T16:34:05.325743Z[0m [33m WARN[0m [2mmoq_sock::bind[0m[2m:[0m UDP send buffer is smaller than requested; raise `net.core.wmem_max` or expect packet loss under load [3mwanted[0m[2m=[0m8388608 [3mgranted[0m[2m=[0m4194304
+[2m2026-11-12T16:34:05.333685Z[0m [32m INFO[0m [2mmoq_relay::cluster[0m[2m:[0m no cluster peers configured; running standalone
+[2m2026-11-12T16:34:05.334972Z[0m [32m INFO[0m [2mmoq_tokio::connection[0m[2m:[0m connecting [3mpeer[0m[2m=[0mhttps://moqt.nokiaresearch.com:4443
+[2m2026-11-12T16:34:05.771154Z[0m [33m WARN[0m [2mmoq_tokio::client[0m[2m:[0m QUIC connection failed [3merr[0m[2m=[0mfailed to exchange h3 connect: protocol error: expected 200, got: Some(500): protocol error: expected 200, got: Some(500): expected 200, got: Some(500)
+[2m2026-11-12T16:34:05.771213Z[0m [31mERROR[0m [2mmoq_tokio::connection[0m[2m:[0m connection loop exited [3merr[0m[2m=[0mfailed to exchange h3 connect: protocol error: expected 200, got: Some(500): protocol error: expected 200, got: Some(500): expected 200, got: Some(500)
+[2m2026-11-12T16:34:05.771372Z[0m [33m WARN[0m [2mmoq_net::model::track[0m[2m:[0m track::Producer dropped without finish() or abort() [3mtrack[0m[2m=[0m0.avc3
+[2m2026-11-12T16:34:05.771385Z[0m [33m WARN[0m [2mmoq_net::model::group[0m[2m:[0m group::Producer dropped without finish() or abort() [3msequence[0m[2m=[0m0
+[2m2026-11-12T16:34:05.771718Z[0m [33m WARN[0m [2mmoq_net::model::track[0m[2m:[0m track::Producer dropped without finish() or abort() [3mtrack[0m[2m=[0mcatalog.json
+[2m2026-11-12T16:34:05.771727Z[0m [33m WARN[0m [2mmoq_net::model::track[0m[2m:[0m track::Producer dropped without finish() or abort() [3mtrack[0m[2m=[0mcatalog.json.z
+[2m2026-11-12T16:34:05.771757Z[0m [33m WARN[0m [2mmoq_net::model::track[0m[2m:[0m track::Producer dropped without finish() or abort() [3mtrack[0m[2m=[0mcatalog
+[2m2026-11-12T16:34:05.771769Z[0m [33m WARN[0m [2mmoq_net::model::track[0m[2m:[0m track::Producer dropped without finish() or abort() [3mtrack[0m[2m=[0mtimeline.z
+Error: failed to exchange h3 connect: protocol error: expected 200, got: Some(500): protocol error: expected 200, got: Some(500): expected 200, got: Some(500)
+[vost#0:0/libx264 @ 0x5c4cb0dff580] Error submitting a packet to the muxer: Broken pipe
+    Last message repeated 1 times
+[out#0/h264 @ 0x5c4cb0dff180] Error muxing a packet
+[out#0/h264 @ 0x5c4cb0dff180] Task finished with error code: -32 (Broken pipe)
+[out#0/h264 @ 0x5c4cb0dff180] Terminating thread with return code -32 (Broken pipe)
+[out#0/h264 @ 0x5c4cb0dff180] Error writing trailer: Broken pipe
+[out#0/h264 @ 0x5c4cb0dff180] Error closing file: Broken pipe
