@@ -1,7 +1,7 @@
 [
   {
-    "generated": "2026-11-13T16:00:07Z",
-    "run_url": "https://github.com/dignakov/moq/actions/runs/43456492105",
+    "generated": "2026-11-14T14:50:57Z",
+    "run_url": "https://github.com/dignakov/moq/actions/runs/43606075400",
     "endpoints": {
       "moqt://aiomoqt-relay.marzresearch.net:4443": {
         "ok": true,
@@ -20,11 +20,11 @@
         "total": 6
       },
       "https://lminiero.it:9000": {
-        "ok": true,
+        "ok": false,
         "versions": [
           "moq-transport-22"
         ],
-        "passed": 6,
+        "passed": 3,
         "total": 6
       },
       "moqt://lminiero.it:9000": {
