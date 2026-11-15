@@ -1,12 +1,15 @@
 [page] negotiated protocol: moqt-16
 [page] subscribe_namespace written: requestId=0
-[page] announced: broadcast=smoke-js-web-4217-28429.hang active=true
-[page] subscribe start: id=2 broadcast=smoke-js-web-4217-28429.hang track=catalog.json
-[page] subscribe written: id=2 broadcast=smoke-js-web-4217-28429.hang track=catalog.json
-[page] subscribe ok: id=2 broadcast=smoke-js-web-4217-28429.hang track=catalog.json
-[page] received catalog hang smoke-js-web-4217-28429.hang {video: Object, clock: Object}
-[page] subscribe start: id=4 broadcast=smoke-js-web-4217-28429.hang track=video
-[page] subscribe written: id=4 broadcast=smoke-js-web-4217-28429.hang track=video
-[page] subscribe ok: id=4 broadcast=smoke-js-web-4217-28429.hang track=video
-[page] received catalog hang smoke-js-web-4217-28429.hang {video: Object, clock: Object}
-decoded 4 frames from smoke-js-web-4217-28429.hang (vite)
+[page] announced: broadcast=smoke-js-web-4048-14419.hang active=true
+[page] subscribe start: id=2 broadcast=smoke-js-web-4048-14419.hang track=catalog.json
+[page] announced: broadcast=moq-test-00 active=true
+[page] subscribe written: id=2 broadcast=smoke-js-web-4048-14419.hang track=catalog.json
+[page] subscribe ok: id=2 broadcast=smoke-js-web-4048-14419.hang track=catalog.json
+[page] received catalog hang smoke-js-web-4048-14419.hang {video: Object, clock: Object}
+[page] subscribe start: id=4 broadcast=smoke-js-web-4048-14419.hang track=video
+[page] subscribe written: id=4 broadcast=smoke-js-web-4048-14419.hang track=video
+[page] subscribe ok: id=4 broadcast=smoke-js-web-4048-14419.hang track=video
+[page] dropping a group with no head: alias=4 group=0
+[page] received catalog hang smoke-js-web-4048-14419.hang {video: Object, clock: Object}
+[page] received catalog hang smoke-js-web-4048-14419.hang {video: Object, clock: Object}
+decoded 6 frames from smoke-js-web-4048-14419.hang (vite)

@@ -1,7 +1,7 @@
 [
   {
-    "generated": "2026-11-14T14:50:57Z",
-    "run_url": "https://github.com/dignakov/moq/actions/runs/43606075400",
+    "generated": "2026-11-15T15:16:48Z",
+    "run_url": "https://github.com/dignakov/moq/actions/runs/43728284422",
     "endpoints": {
       "moqt://aiomoqt-relay.marzresearch.net:4443": {
         "ok": true,
@@ -20,19 +20,19 @@
         "total": 6
       },
       "https://lminiero.it:9000": {
-        "ok": false,
-        "versions": [
-          "moq-transport-22"
-        ],
-        "passed": 3,
-        "total": 6
-      },
-      "moqt://lminiero.it:9000": {
         "ok": true,
         "versions": [
           "moq-transport-22"
         ],
-        "passed": 1,
+        "passed": 6,
+        "total": 6
+      },
+      "moqt://lminiero.it:9000": {
+        "ok": false,
+        "versions": [
+          "moq-transport-22"
+        ],
+        "passed": 0,
         "total": 1
       },
       "https://us-west-2.relay.quicr.org:33437/relay": {
@@ -123,12 +123,6 @@
         "passed": 5,
         "total": 6
       },
-      "https://relay.moqtail.dev:8244": {
-        "ok": false,
-        "versions": [],
-        "passed": 0,
-        "total": 6
-      },
       "https://relay.moqtail.dev": {
         "ok": false,
         "versions": [
@@ -182,26 +176,27 @@
         "total": 1
       },
       "https://fb.mvfst.net:9448/moq-relay": {
-        "ok": false,
+        "ok": true,
         "versions": [
-          "moq-transport-14",
           "moq-transport-16"
         ],
-        "passed": 2,
+        "passed": 6,
         "total": 6
       },
       "moqt://fb.mvfst.net:9448/moq-relay": {
-        "ok": false,
+        "ok": true,
         "versions": [
-          "moq-transport-14"
+          "moq-transport-16"
         ],
-        "passed": 0,
+        "passed": 1,
         "total": 1
       },
       "https://quichemoq.dev:443": {
-        "ok": false,
-        "versions": [],
-        "passed": 0,
+        "ok": true,
+        "versions": [
+          "moq-transport-18"
+        ],
+        "passed": 6,
         "total": 6
       },
       "moqt://moq-relay.red5.net:4433": {

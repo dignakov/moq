@@ -1,11 +1,10 @@
-publishing smoke-js-web-4217-15084.hang (fake camera, vite) to https://quichemoq.dev:443
-[page] Failed to establish a connection to https://quichemoq.dev/: net::ERR_QUIC_PROTOCOL_ERROR.QUIC_NETWORK_IDLE_TIMEOUT (No recent network activity after 4002371us. Timeout:4s num_undecryptable_packets: 0 {}).
-[page] connection error: AggregateError: All promises were rejected
-[page] Failed to establish a connection to https://quichemoq.dev/: net::ERR_QUIC_PROTOCOL_ERROR.QUIC_NETWORK_IDLE_TIMEOUT (No recent network activity after 4001577us. Timeout:4s num_undecryptable_packets: 0 {}).
-[page] connection error: AggregateError: All promises were rejected
-[page] Failed to establish a connection to https://quichemoq.dev/: net::ERR_QUIC_PROTOCOL_ERROR.QUIC_NETWORK_IDLE_TIMEOUT (No recent network activity after 4002126us. Timeout:4s num_undecryptable_packets: 0 {}).
-[page] connection error: AggregateError: All promises were rejected
-[page] Failed to establish a connection to https://quichemoq.dev/: net::ERR_QUIC_PROTOCOL_ERROR.QUIC_NETWORK_IDLE_TIMEOUT (No recent network activity after 4002232us. Timeout:4s num_undecryptable_packets: 0 {}).
-[page] connection error: AggregateError: All promises were rejected
-[page] Failed to establish a connection to https://quichemoq.dev/: net::ERR_QUIC_PROTOCOL_ERROR.QUIC_NETWORK_IDLE_TIMEOUT (No recent network activity after 4002570us. Timeout:4s num_undecryptable_packets: 0 {}).
-[page] connection error: AggregateError: All promises were rejected
+publishing smoke-js-web-4048-25234.hang (fake camera, vite) to https://quichemoq.dev:443
+[page] negotiated protocol: moqt-18
+[page] subscribe_namespace written: requestId=0
+[page] announced: broadcast=smoke-js-web-4048-25234.hang active=true
+[page] publish ok: broadcast=smoke-js-web-4048-25234.hang track=catalog.json
+[page] publish ok: broadcast=smoke-js-web-4048-25234.hang track=video
+[page] publish done: broadcast=smoke-js-web-4048-25234.hang track=video
+[page] publish error: broadcast=smoke-js-web-4048-25234.hang track=video error=remote error: 1
+[page] publish done: broadcast=smoke-js-web-4048-25234.hang track=catalog.json
+[page] publish error: broadcast=smoke-js-web-4048-25234.hang track=catalog.json error=The stream was aborted by the remote server
