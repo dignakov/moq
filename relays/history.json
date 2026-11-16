@@ -1,7 +1,7 @@
 [
   {
-    "generated": "2026-11-15T15:16:48Z",
-    "run_url": "https://github.com/dignakov/moq/actions/runs/43728284422",
+    "generated": "2026-11-16T17:51:41Z",
+    "run_url": "https://github.com/dignakov/moq/actions/runs/43921309931",
     "endpoints": {
       "moqt://aiomoqt-relay.marzresearch.net:4443": {
         "ok": true,
@@ -20,19 +20,19 @@
         "total": 6
       },
       "https://lminiero.it:9000": {
-        "ok": true,
-        "versions": [
-          "moq-transport-22"
-        ],
-        "passed": 6,
-        "total": 6
-      },
-      "moqt://lminiero.it:9000": {
         "ok": false,
         "versions": [
           "moq-transport-22"
         ],
-        "passed": 0,
+        "passed": 3,
+        "total": 6
+      },
+      "moqt://lminiero.it:9000": {
+        "ok": true,
+        "versions": [
+          "moq-transport-22"
+        ],
+        "passed": 1,
         "total": 1
       },
       "https://us-west-2.relay.quicr.org:33437/relay": {
@@ -60,11 +60,11 @@
         "total": 1
       },
       "https://cdn.moq.dev/anon": {
-        "ok": true,
+        "ok": false,
         "versions": [
           "moq-lite-06"
         ],
-        "passed": 6,
+        "passed": 3,
         "total": 6
       },
       "wss://cdn.moq.dev/anon": {
@@ -132,31 +132,31 @@
         "total": 6
       },
       "moqt://moqt.nokiaresearch.com:8443/moq": {
+        "ok": false,
+        "versions": [],
+        "passed": 0,
+        "total": 1
+      },
+      "https://moqt.nokiaresearch.com:8443/moq": {
+        "ok": false,
+        "versions": [],
+        "passed": 0,
+        "total": 6
+      },
+      "moqt://moqt.nokiaresearch.com:4443/moq": {
         "ok": true,
         "versions": [
-          "moq-transport-19"
+          "moq-transport-22"
         ],
         "passed": 1,
         "total": 1
       },
-      "https://moqt.nokiaresearch.com:8443/moq": {
+      "https://moqt.nokiaresearch.com:4443/moq": {
         "ok": true,
         "versions": [
-          "moq-transport-19"
+          "moq-transport-22"
         ],
         "passed": 6,
-        "total": 6
-      },
-      "moqt://moqt.nokiaresearch.com:4443/moq": {
-        "ok": false,
-        "versions": [],
-        "passed": 0,
-        "total": 1
-      },
-      "https://moqt.nokiaresearch.com:4443/moq": {
-        "ok": false,
-        "versions": [],
-        "passed": 0,
         "total": 6
       },
       "https://moqx-main.ci.openmoq.org:4433/moq-relay": {
@@ -194,7 +194,7 @@
       "https://quichemoq.dev:443": {
         "ok": true,
         "versions": [
-          "moq-transport-18"
+          "moq-transport-22"
         ],
         "passed": 6,
         "total": 6
