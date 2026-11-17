@@ -1,7 +1,7 @@
 [
   {
-    "generated": "2026-11-16T17:51:41Z",
-    "run_url": "https://github.com/dignakov/moq/actions/runs/43921309931",
+    "generated": "2026-11-17T17:26:03Z",
+    "run_url": "https://github.com/dignakov/moq/actions/runs/44135081350",
     "endpoints": {
       "moqt://aiomoqt-relay.marzresearch.net:4443": {
         "ok": true,
@@ -60,11 +60,11 @@
         "total": 1
       },
       "https://cdn.moq.dev/anon": {
-        "ok": false,
+        "ok": true,
         "versions": [
           "moq-lite-06"
         ],
-        "passed": 3,
+        "passed": 6,
         "total": 6
       },
       "wss://cdn.moq.dev/anon": {
