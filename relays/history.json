@@ -1,7 +1,7 @@
 [
   {
-    "generated": "2026-11-17T17:26:03Z",
-    "run_url": "https://github.com/dignakov/moq/actions/runs/44135081350",
+    "generated": "2026-11-18T17:13:32Z",
+    "run_url": "https://github.com/dignakov/moq/actions/runs/44351928483",
     "endpoints": {
       "moqt://aiomoqt-relay.marzresearch.net:4443": {
         "ok": true,
@@ -20,11 +20,11 @@
         "total": 6
       },
       "https://lminiero.it:9000": {
-        "ok": false,
+        "ok": true,
         "versions": [
           "moq-transport-22"
         ],
-        "passed": 3,
+        "passed": 6,
         "total": 6
       },
       "moqt://lminiero.it:9000": {
@@ -238,6 +238,22 @@
         ],
         "passed": 1,
         "total": 1
+      },
+      "moqt://interop-k7m2-prestage.ove.us-phoenix-1.oci.oraclecloud.com:4443": {
+        "ok": true,
+        "versions": [
+          "moq-transport-16"
+        ],
+        "passed": 1,
+        "total": 1
+      },
+      "https://interop-k7m2-prestage.ove.us-phoenix-1.oci.oraclecloud.com:4443": {
+        "ok": false,
+        "versions": [
+          "moq-transport-16"
+        ],
+        "passed": 1,
+        "total": 6
       }
     }
   }
