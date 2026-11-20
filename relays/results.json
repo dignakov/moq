@@ -1,6 +1,6 @@
 {
-  "generated": "2026-11-19T17:14:06Z",
-  "run_url": "https://github.com/dignakov/moq/actions/runs/44572005968",
+  "generated": "2026-11-20T16:43:49Z",
+  "run_url": "https://github.com/dignakov/moq/actions/runs/44774394869",
   "registry": "https://raw.githubusercontent.com/englishm/moq-interop-runner/main/implementations.json",
   "pairs": [
     "rust → rust",
@@ -124,7 +124,7 @@
           "status": "FAIL",
           "pub_version": "moq-transport-22",
           "sub_version": "moq-transport-22",
-          "reason": "connected, nothing subscribed: error: timed out waiting for data",
+          "reason": "no SUBSCRIBE_OK for catalog.json: error: timed out waiting for data",
           "sub_log": "https_lminiero.it_9000/rust-js-bun.log",
           "pub_log": "https_lminiero.it_9000/pub-rust.log"
         },
@@ -160,16 +160,16 @@
       "url": "moqt://lminiero.it:9000",
       "transport": "QUIC",
       "required": false,
-      "ok": true,
+      "ok": false,
       "versions": [
         "moq-transport-22"
       ],
       "cells": {
         "rust → rust": {
-          "status": "PASS",
+          "status": "FAIL",
           "pub_version": "moq-transport-22",
           "sub_version": "moq-transport-22",
-          "reason": "",
+          "reason": "connected, nothing subscribed: session terminated err=transport: connection error: closed",
           "sub_log": "moqt_lminiero.it_9000/rust-rust.log",
           "pub_log": "moqt_lminiero.it_9000/pub-rust.log"
         }
@@ -284,7 +284,7 @@
       "url": "https://cdn.moq.dev/anon",
       "transport": "WebTransport",
       "required": true,
-      "ok": true,
+      "ok": false,
       "versions": [
         "moq-lite-06"
       ],
@@ -298,26 +298,26 @@
           "pub_log": "https_cdn.moq.dev_anon/pub-rust.log"
         },
         "rust → js-web": {
-          "status": "PASS",
+          "status": "FAIL",
           "pub_version": "moq-lite-06",
           "sub_version": "moq-lite-06",
-          "reason": "",
+          "reason": "no SUBSCRIBE_OK for catalog.json: subscribe error: id=0 broadcast=smoke-rust-4252-30235.hang track=catalog.json error=subscribe timed out after 10000ms waiting for the first response (browser stream limit reached?)",
           "sub_log": "https_cdn.moq.dev_anon/rust-js-web.log",
           "pub_log": "https_cdn.moq.dev_anon/pub-rust.log"
         },
         "rust → js-bun": {
-          "status": "PASS",
+          "status": "FAIL",
           "pub_version": "moq-lite-06",
           "sub_version": "moq-lite-06",
-          "reason": "",
+          "reason": "no SUBSCRIBE_OK for catalog.json: subscribe error: id=0 broadcast=smoke-rust-4252-30235.hang track=catalog.json error=subscribe timed out after 10000ms waiting for the first response (browser stream limit reached?)",
           "sub_log": "https_cdn.moq.dev_anon/rust-js-bun.log",
           "pub_log": "https_cdn.moq.dev_anon/pub-rust.log"
         },
         "js-web → rust": {
-          "status": "PASS",
+          "status": "FAIL",
           "pub_version": "moq-lite-06",
           "sub_version": "moq-lite-06",
-          "reason": "",
+          "reason": "SUBSCRIBE for catalog.json, no SUBSCRIBE_OK logged, no objects: probe stream error err=transport: session error: connection error: closed",
           "sub_log": "https_cdn.moq.dev_anon/js-web-rust.log",
           "pub_log": "https_cdn.moq.dev_anon/pub-js-web.log"
         },
@@ -330,10 +330,10 @@
           "pub_log": "https_cdn.moq.dev_anon/pub-js-web.log"
         },
         "js-web → js-bun": {
-          "status": "PASS",
+          "status": "FAIL",
           "pub_version": "moq-lite-06",
           "sub_version": "moq-lite-06",
-          "reason": "",
+          "reason": "SUBSCRIBE_OK for catalog.json, no objects: error: timed out waiting for data",
           "sub_log": "https_cdn.moq.dev_anon/js-web-js-bun.log",
           "pub_log": "https_cdn.moq.dev_anon/pub-js-web.log"
         }
@@ -539,7 +539,7 @@
           "status": "FAIL",
           "pub_version": "moq-transport-22",
           "sub_version": "moq-transport-22",
-          "reason": "SUBSCRIBE for catalog.json, no SUBSCRIBE_OK logged, no objects: session terminated err=transport: connection error: closed",
+          "reason": "SUBSCRIBE for 0.avc3, no SUBSCRIBE_OK logged, no objects: track failed; ending the reader track=\"0.avc3\" error=Remote(18)",
           "sub_log": "moqt_moq-ng.cloudflare.mediaoverquic.com_443/rust-rust.log",
           "pub_log": "moqt_moq-ng.cloudflare.mediaoverquic.com_443/pub-rust.log"
         }
@@ -645,7 +645,7 @@
           "status": "FAIL",
           "pub_version": "moq-transport-22",
           "sub_version": "moq-transport-22",
-          "reason": "SUBSCRIBE for catalog.json, no SUBSCRIBE_OK logged, no objects",
+          "reason": "SUBSCRIBE for catalog.json, no SUBSCRIBE_OK logged, no objects: session terminated err=transport: connection error: closed",
           "sub_log": "https_relay.moqtail.dev/js-web-rust.log",
           "pub_log": "https_relay.moqtail.dev/pub-js-web.log"
         },
