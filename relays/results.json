@@ -1,6 +1,6 @@
 {
-  "generated": "2026-11-20T16:43:49Z",
-  "run_url": "https://github.com/dignakov/moq/actions/runs/44774394869",
+  "generated": "2026-11-21T16:04:45Z",
+  "run_url": "https://github.com/dignakov/moq/actions/runs/44921263069",
   "registry": "https://raw.githubusercontent.com/englishm/moq-interop-runner/main/implementations.json",
   "pairs": [
     "rust → rust",
@@ -160,16 +160,16 @@
       "url": "moqt://lminiero.it:9000",
       "transport": "QUIC",
       "required": false,
-      "ok": false,
+      "ok": true,
       "versions": [
         "moq-transport-22"
       ],
       "cells": {
         "rust → rust": {
-          "status": "FAIL",
+          "status": "PASS",
           "pub_version": "moq-transport-22",
           "sub_version": "moq-transport-22",
-          "reason": "connected, nothing subscribed: session terminated err=transport: connection error: closed",
+          "reason": "",
           "sub_log": "moqt_lminiero.it_9000/rust-rust.log",
           "pub_log": "moqt_lminiero.it_9000/pub-rust.log"
         }
@@ -284,7 +284,7 @@
       "url": "https://cdn.moq.dev/anon",
       "transport": "WebTransport",
       "required": true,
-      "ok": false,
+      "ok": true,
       "versions": [
         "moq-lite-06"
       ],
@@ -298,26 +298,26 @@
           "pub_log": "https_cdn.moq.dev_anon/pub-rust.log"
         },
         "rust → js-web": {
-          "status": "FAIL",
+          "status": "PASS",
           "pub_version": "moq-lite-06",
           "sub_version": "moq-lite-06",
-          "reason": "no SUBSCRIBE_OK for catalog.json: subscribe error: id=0 broadcast=smoke-rust-4252-30235.hang track=catalog.json error=subscribe timed out after 10000ms waiting for the first response (browser stream limit reached?)",
+          "reason": "",
           "sub_log": "https_cdn.moq.dev_anon/rust-js-web.log",
           "pub_log": "https_cdn.moq.dev_anon/pub-rust.log"
         },
         "rust → js-bun": {
-          "status": "FAIL",
+          "status": "PASS",
           "pub_version": "moq-lite-06",
           "sub_version": "moq-lite-06",
-          "reason": "no SUBSCRIBE_OK for catalog.json: subscribe error: id=0 broadcast=smoke-rust-4252-30235.hang track=catalog.json error=subscribe timed out after 10000ms waiting for the first response (browser stream limit reached?)",
+          "reason": "",
           "sub_log": "https_cdn.moq.dev_anon/rust-js-bun.log",
           "pub_log": "https_cdn.moq.dev_anon/pub-rust.log"
         },
         "js-web → rust": {
-          "status": "FAIL",
+          "status": "PASS",
           "pub_version": "moq-lite-06",
           "sub_version": "moq-lite-06",
-          "reason": "SUBSCRIBE for catalog.json, no SUBSCRIBE_OK logged, no objects: probe stream error err=transport: session error: connection error: closed",
+          "reason": "",
           "sub_log": "https_cdn.moq.dev_anon/js-web-rust.log",
           "pub_log": "https_cdn.moq.dev_anon/pub-js-web.log"
         },
@@ -330,10 +330,10 @@
           "pub_log": "https_cdn.moq.dev_anon/pub-js-web.log"
         },
         "js-web → js-bun": {
-          "status": "FAIL",
+          "status": "PASS",
           "pub_version": "moq-lite-06",
           "sub_version": "moq-lite-06",
-          "reason": "SUBSCRIBE_OK for catalog.json, no objects: error: timed out waiting for data",
+          "reason": "",
           "sub_log": "https_cdn.moq.dev_anon/js-web-js-bun.log",
           "pub_log": "https_cdn.moq.dev_anon/pub-js-web.log"
         }
@@ -645,7 +645,7 @@
           "status": "FAIL",
           "pub_version": "moq-transport-22",
           "sub_version": "moq-transport-22",
-          "reason": "SUBSCRIBE for catalog.json, no SUBSCRIBE_OK logged, no objects: session terminated err=transport: connection error: closed",
+          "reason": "SUBSCRIBE for catalog.json, no SUBSCRIBE_OK logged, no objects",
           "sub_log": "https_relay.moqtail.dev/js-web-rust.log",
           "pub_log": "https_relay.moqtail.dev/pub-js-web.log"
         },
@@ -1243,16 +1243,16 @@
       "url": "moqt://interop-k7m2-prestage.ove.us-phoenix-1.oci.oraclecloud.com:4443",
       "transport": "QUIC",
       "required": false,
-      "ok": true,
+      "ok": false,
       "versions": [
-        "moq-transport-16"
+        "moq-transport-22"
       ],
       "cells": {
         "rust → rust": {
-          "status": "PASS",
-          "pub_version": "moq-transport-16",
-          "sub_version": "moq-transport-16",
-          "reason": "",
+          "status": "FAIL",
+          "pub_version": "moq-transport-22",
+          "sub_version": "moq-transport-22",
+          "reason": "connected, nothing subscribed: session severed immediately, retrying peer=moqt://interop-k7m2-prestage.ove.us-phoenix-1.oci.oraclecloud.com:4443 err=unknown code=8",
           "sub_log": "moqt_interop-k7m2-prestage.ove.us-phoenix-1.oci.oraclecloud.com_4443/rust-rust.log",
           "pub_log": "moqt_interop-k7m2-prestage.ove.us-phoenix-1.oci.oraclecloud.com_4443/pub-rust.log"
         }
@@ -1266,54 +1266,54 @@
       "required": false,
       "ok": false,
       "versions": [
-        "moq-transport-16"
+        "moq-transport-22"
       ],
       "cells": {
         "rust → rust": {
-          "status": "PASS",
-          "pub_version": "moq-transport-16",
-          "sub_version": "moq-transport-16",
-          "reason": "",
+          "status": "FAIL",
+          "pub_version": "moq-transport-22",
+          "sub_version": "moq-transport-22",
+          "reason": "connected, nothing subscribed: session terminated err=transport: connection error: closed",
           "sub_log": "https_interop-k7m2-prestage.ove.us-phoenix-1.oci.oraclecloud.com_4443/rust-rust.log",
           "pub_log": "https_interop-k7m2-prestage.ove.us-phoenix-1.oci.oraclecloud.com_4443/pub-rust.log"
         },
         "rust → js-web": {
           "status": "FAIL",
-          "pub_version": "moq-transport-16",
-          "sub_version": "moq-transport-16",
+          "pub_version": "moq-transport-22",
+          "sub_version": "moq-transport-22",
           "reason": "connected, nothing subscribed",
           "sub_log": "https_interop-k7m2-prestage.ove.us-phoenix-1.oci.oraclecloud.com_4443/rust-js-web.log",
           "pub_log": "https_interop-k7m2-prestage.ove.us-phoenix-1.oci.oraclecloud.com_4443/pub-rust.log"
         },
         "rust → js-bun": {
           "status": "FAIL",
-          "pub_version": "moq-transport-16",
-          "sub_version": "moq-transport-16",
+          "pub_version": "moq-transport-22",
+          "sub_version": "moq-transport-22",
           "reason": "connected, nothing subscribed: error: timed out waiting for data",
           "sub_log": "https_interop-k7m2-prestage.ove.us-phoenix-1.oci.oraclecloud.com_4443/rust-js-bun.log",
           "pub_log": "https_interop-k7m2-prestage.ove.us-phoenix-1.oci.oraclecloud.com_4443/pub-rust.log"
         },
         "js-web → rust": {
           "status": "FAIL",
-          "pub_version": "moq-transport-16",
-          "sub_version": "moq-transport-16",
-          "reason": "connected, nothing subscribed: session terminated err=transport: session error: connection error: closed",
+          "pub_version": "moq-transport-22",
+          "sub_version": "moq-transport-22",
+          "reason": "connected, nothing subscribed: session terminated err=transport: connection error: closed",
           "sub_log": "https_interop-k7m2-prestage.ove.us-phoenix-1.oci.oraclecloud.com_4443/js-web-rust.log",
           "pub_log": "https_interop-k7m2-prestage.ove.us-phoenix-1.oci.oraclecloud.com_4443/pub-js-web.log"
         },
         "js-web → js-web": {
           "status": "FAIL",
-          "pub_version": "moq-transport-16",
-          "sub_version": "moq-transport-16",
+          "pub_version": "moq-transport-22",
+          "sub_version": "moq-transport-22",
           "reason": "connected, nothing subscribed",
           "sub_log": "https_interop-k7m2-prestage.ove.us-phoenix-1.oci.oraclecloud.com_4443/js-web-js-web.log",
           "pub_log": "https_interop-k7m2-prestage.ove.us-phoenix-1.oci.oraclecloud.com_4443/pub-js-web.log"
         },
         "js-web → js-bun": {
           "status": "FAIL",
-          "pub_version": "moq-transport-16",
-          "sub_version": "moq-transport-16",
-          "reason": "connected, nothing subscribed: error: timed out waiting for data",
+          "pub_version": "moq-transport-22",
+          "sub_version": "moq-transport-22",
+          "reason": "no SUBSCRIBE_OK for catalog.json: error: timed out waiting for data",
           "sub_log": "https_interop-k7m2-prestage.ove.us-phoenix-1.oci.oraclecloud.com_4443/js-web-js-bun.log",
           "pub_log": "https_interop-k7m2-prestage.ove.us-phoenix-1.oci.oraclecloud.com_4443/pub-js-web.log"
         }
