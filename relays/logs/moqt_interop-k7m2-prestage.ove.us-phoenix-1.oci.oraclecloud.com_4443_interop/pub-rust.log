@@ -1,8 +1,11 @@
-[2m2026-11-23T19:49:49.543235Z[0m [32m INFO[0m [2mmoq_relay::cluster[0m[2m:[0m cluster initialized [3mhop_id[0m[2m=[0m1901116843409986 [3mconfigured[0m[2m=[0mfalse
-[2m2026-11-23T19:49:49.546523Z[0m [33m WARN[0m [2mmoq_sock::bind[0m[2m:[0m UDP receive buffer is smaller than requested; raise `net.core.rmem_max` or expect packet loss under load [3mwanted[0m[2m=[0m8388608 [3mgranted[0m[2m=[0m1048576
-[2m2026-11-23T19:49:49.546551Z[0m [33m WARN[0m [2mmoq_sock::bind[0m[2m:[0m UDP send buffer is smaller than requested; raise `net.core.wmem_max` or expect packet loss under load [3mwanted[0m[2m=[0m8388608 [3mgranted[0m[2m=[0m4194304
-[2m2026-11-23T19:49:49.550272Z[0m [32m INFO[0m [2mmoq_relay::cluster[0m[2m:[0m no cluster peers configured; running standalone
-[2m2026-11-23T19:49:49.550280Z[0m [32m INFO[0m [2mmoq_tokio::connection[0m[2m:[0m connecting [3mpeer[0m[2m=[0mmoqt://interop-k7m2-prestage.ove.us-phoenix-1.oci.oraclecloud.com:4443
-[2m2026-11-23T19:49:49.690557Z[0m [32m INFO[0m [2mmoq_tokio::client[0m[2m:[0m connected [3mversion[0m[2m=[0mmoq-transport-22
-[2m2026-11-23T19:49:49.690585Z[0m [32m INFO[0m [2mmoq_tokio::connection[0m[2m:[0m connected [3mpeer[0m[2m=[0mmoqt://interop-k7m2-prestage.ove.us-phoenix-1.oci.oraclecloud.com:4443
-[2m2026-11-23T19:49:49.978829Z[0m [32m INFO[0m [2mmoq_net::ietf::session[0m[2m:[0m session terminated [3merr[0m[2m=[0mtransport: connection error: closed
+[2m2026-11-24T19:22:21.653965Z[0m [32m INFO[0m [2mmoq_relay::cluster[0m[2m:[0m cluster initialized [3mhop_id[0m[2m=[0m5014968983398952 [3mconfigured[0m[2m=[0mfalse
+[2m2026-11-24T19:22:21.657295Z[0m [33m WARN[0m [2mmoq_sock::bind[0m[2m:[0m UDP receive buffer is smaller than requested; raise `net.core.rmem_max` or expect packet loss under load [3mwanted[0m[2m=[0m8388608 [3mgranted[0m[2m=[0m1048576
+[2m2026-11-24T19:22:21.657319Z[0m [33m WARN[0m [2mmoq_sock::bind[0m[2m:[0m UDP send buffer is smaller than requested; raise `net.core.wmem_max` or expect packet loss under load [3mwanted[0m[2m=[0m8388608 [3mgranted[0m[2m=[0m4194304
+[2m2026-11-24T19:22:21.660816Z[0m [32m INFO[0m [2mmoq_tokio::connection[0m[2m:[0m connecting [3mpeer[0m[2m=[0mmoqt://interop-k7m2-prestage.ove.us-phoenix-1.oci.oraclecloud.com:4443
+[2m2026-11-24T19:22:21.661039Z[0m [32m INFO[0m [2mmoq_relay::cluster[0m[2m:[0m no cluster peers configured; running standalone
+[2m2026-11-24T19:22:21.738638Z[0m [32m INFO[0m [2mmoq_tokio::client[0m[2m:[0m connected [3mversion[0m[2m=[0mmoq-transport-22
+[2m2026-11-24T19:22:21.738672Z[0m [32m INFO[0m [2mmoq_tokio::connection[0m[2m:[0m connected [3mpeer[0m[2m=[0mmoqt://interop-k7m2-prestage.ove.us-phoenix-1.oci.oraclecloud.com:4443
+[2m2026-11-24T19:22:21.861897Z[0m [31mERROR[0m [2mmoq_mux::catalog::producer[0m[2m:[0m failed to publish the catalog, aborting its tracks [3merr[0m[2m=[0mjson: closed
+[2m2026-11-24T19:22:21.862324Z[0m [32m INFO[0m [2mmoq_net::ietf::session[0m[2m:[0m session terminated [3merr[0m[2m=[0mtransport: connection error: closed
+/home/runner/work/moq/moq/test/smoke/smoke.sh: line 708: 16079 Killed                     ffmpeg_h264
+     16080 Done                       | rust_moq "$URL" --broadcast "$broadcast" import avc3

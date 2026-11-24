@@ -1,6 +1,6 @@
 {
-  "generated": "2026-11-23T19:50:52Z",
-  "run_url": "https://github.com/dignakov/moq/actions/runs/45251587641",
+  "generated": "2026-11-24T19:23:24Z",
+  "run_url": "https://github.com/dignakov/moq/actions/runs/45468125611",
   "registry": "https://raw.githubusercontent.com/englishm/moq-interop-runner/main/implementations.json",
   "pairs": [
     "rust → rust",
@@ -99,32 +99,32 @@
       "url": "https://lminiero.it:9000",
       "transport": "WebTransport",
       "required": false,
-      "ok": false,
+      "ok": true,
       "versions": [
         "moq-transport-22"
       ],
       "cells": {
         "rust → rust": {
-          "status": "FAIL",
+          "status": "PASS",
           "pub_version": "moq-transport-22",
           "sub_version": "moq-transport-22",
-          "reason": "connected, nothing subscribed: session terminated err=transport: connection error: closed",
+          "reason": "",
           "sub_log": "https_lminiero.it_9000/rust-rust.log",
           "pub_log": "https_lminiero.it_9000/pub-rust.log"
         },
         "rust → js-web": {
-          "status": "FAIL",
+          "status": "PASS",
           "pub_version": "moq-transport-22",
           "sub_version": "moq-transport-22",
-          "reason": "connected, nothing subscribed",
+          "reason": "",
           "sub_log": "https_lminiero.it_9000/rust-js-web.log",
           "pub_log": "https_lminiero.it_9000/pub-rust.log"
         },
         "rust → js-bun": {
-          "status": "FAIL",
+          "status": "PASS",
           "pub_version": "moq-transport-22",
           "sub_version": "moq-transport-22",
-          "reason": "connected, nothing subscribed: error: timed out waiting for data",
+          "reason": "",
           "sub_log": "https_lminiero.it_9000/rust-js-bun.log",
           "pub_log": "https_lminiero.it_9000/pub-rust.log"
         },
@@ -560,7 +560,7 @@
           "status": "FAIL",
           "pub_version": "moq-transport-22",
           "sub_version": "moq-transport-22",
-          "reason": "SUBSCRIBE for catalog.json, no SUBSCRIBE_OK logged, no objects: session terminated err=transport: connection error: closed",
+          "reason": "SUBSCRIBE for 0.avc3, no SUBSCRIBE_OK logged, no objects: track failed; ending the reader track=\"0.avc3\" error=Remote(18)",
           "sub_log": "https_moq-ng.cloudflare.mediaoverquic.com_443/rust-rust.log",
           "pub_log": "https_moq-ng.cloudflare.mediaoverquic.com_443/pub-rust.log"
         },
@@ -1112,7 +1112,7 @@
           "status": "FAIL",
           "pub_version": "moq-transport-22",
           "sub_version": "moq-transport-22",
-          "reason": "connected, nothing subscribed: session terminated err=transport: connection error: closed",
+          "reason": "connected, nothing subscribed",
           "sub_log": "https_moq-relay.red5.net_4433_moq/js-web-rust.log",
           "pub_log": "https_moq-relay.red5.net_4433_moq/pub-js-web.log"
         },
@@ -1281,7 +1281,7 @@
           "status": "FAIL",
           "pub_version": "moq-transport-22",
           "sub_version": "moq-transport-22",
-          "reason": "no SUBSCRIBE_OK for catalog.json: subscribe error: id=2 broadcast=smoke-rust-4258-1392.hang track=catalog.json error=SUBSCRIBE error: not_supported (code=3) ",
+          "reason": "no SUBSCRIBE_OK for catalog.json: subscribe error: id=2 broadcast=smoke-rust-4044-30867.hang track=catalog.json error=SUBSCRIBE error: not_supported (code=3) ",
           "sub_log": "https_interop-k7m2-prestage.ove.us-phoenix-1.oci.oraclecloud.com_4443_interop/rust-js-web.log",
           "pub_log": "https_interop-k7m2-prestage.ove.us-phoenix-1.oci.oraclecloud.com_4443_interop/pub-rust.log"
         },
@@ -1289,7 +1289,7 @@
           "status": "FAIL",
           "pub_version": "moq-transport-22",
           "sub_version": "moq-transport-22",
-          "reason": "no SUBSCRIBE_OK for catalog.json: subscribe error: id=2 broadcast=smoke-rust-4258-1392.hang track=catalog.json error=SUBSCRIBE error: not_supported (code=3) ",
+          "reason": "no SUBSCRIBE_OK for catalog.json: subscribe error: id=2 broadcast=smoke-rust-4044-30867.hang track=catalog.json error=SUBSCRIBE error: not_supported (code=3) ",
           "sub_log": "https_interop-k7m2-prestage.ove.us-phoenix-1.oci.oraclecloud.com_4443_interop/rust-js-bun.log",
           "pub_log": "https_interop-k7m2-prestage.ove.us-phoenix-1.oci.oraclecloud.com_4443_interop/pub-rust.log"
         },
@@ -1305,7 +1305,7 @@
           "status": "FAIL",
           "pub_version": "moq-transport-22",
           "sub_version": "moq-transport-22",
-          "reason": "no SUBSCRIBE_OK for catalog.json: subscribe error: id=2 broadcast=smoke-js-web-4258-28867.hang track=catalog.json error=SUBSCRIBE error: not_supported (code=3) ",
+          "reason": "no SUBSCRIBE_OK for catalog.json: subscribe error: id=2 broadcast=smoke-js-web-4044-31880.hang track=catalog.json error=SUBSCRIBE error: not_supported (code=3) ",
           "sub_log": "https_interop-k7m2-prestage.ove.us-phoenix-1.oci.oraclecloud.com_4443_interop/js-web-js-web.log",
           "pub_log": "https_interop-k7m2-prestage.ove.us-phoenix-1.oci.oraclecloud.com_4443_interop/pub-js-web.log"
         },
@@ -1313,7 +1313,7 @@
           "status": "FAIL",
           "pub_version": "moq-transport-22",
           "sub_version": "moq-transport-22",
-          "reason": "no SUBSCRIBE_OK for catalog.json: subscribe error: id=2 broadcast=smoke-js-web-4258-28867.hang track=catalog.json error=SUBSCRIBE error: not_supported (code=3) ",
+          "reason": "no SUBSCRIBE_OK for catalog.json: subscribe error: id=2 broadcast=smoke-js-web-4044-31880.hang track=catalog.json error=SUBSCRIBE error: not_supported (code=3) ",
           "sub_log": "https_interop-k7m2-prestage.ove.us-phoenix-1.oci.oraclecloud.com_4443_interop/js-web-js-bun.log",
           "pub_log": "https_interop-k7m2-prestage.ove.us-phoenix-1.oci.oraclecloud.com_4443_interop/pub-js-web.log"
         }
