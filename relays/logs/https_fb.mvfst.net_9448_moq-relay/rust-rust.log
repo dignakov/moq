@@ -1,14 +1,14 @@
-[2m2026-11-26T18:09:21.058314Z[0m [32m INFO[0m [2mmoq_relay::cluster[0m[2m:[0m cluster initialized [3mhop_id[0m[2m=[0m7265248734484227 [3mconfigured[0m[2m=[0mfalse
-[2m2026-11-26T18:09:21.064382Z[0m [33m WARN[0m [2mmoq_sock::bind[0m[2m:[0m UDP receive buffer is smaller than requested; raise `net.core.rmem_max` or expect packet loss under load [3mwanted[0m[2m=[0m8388608 [3mgranted[0m[2m=[0m1048576
-[2m2026-11-26T18:09:21.064412Z[0m [33m WARN[0m [2mmoq_sock::bind[0m[2m:[0m UDP send buffer is smaller than requested; raise `net.core.wmem_max` or expect packet loss under load [3mwanted[0m[2m=[0m8388608 [3mgranted[0m[2m=[0m4194304
-[2m2026-11-26T18:09:21.073252Z[0m [32m INFO[0m [2mmoq_relay::cluster[0m[2m:[0m no cluster peers configured; running standalone
-[2m2026-11-26T18:09:21.073373Z[0m [32m INFO[0m [2mmoq_tokio::connection[0m[2m:[0m connecting [3mpeer[0m[2m=[0mhttps://fb.mvfst.net:9448
-[2m2026-11-26T18:09:21.284949Z[0m [32m INFO[0m [2mmoq_tokio::client[0m[2m:[0m connected [3mversion[0m[2m=[0mmoq-transport-16
-[2m2026-11-26T18:09:21.284991Z[0m [32m INFO[0m [2mmoq_tokio::connection[0m[2m:[0m connected [3mpeer[0m[2m=[0mhttps://fb.mvfst.net:9448
-[2m2026-11-26T18:09:21.316380Z[0m [32m INFO[0m [2mmoq_net::ietf::subscriber[0m[2m:[0m subscribe started [3mbroadcast[0m[2m=[0msmoke-rust-4053-30778.hang [3mtrack[0m[2m=[0mcatalog.json
-[2m2026-11-26T18:09:21.415291Z[0m [32m INFO[0m [2mmoq_net::ietf::subscriber[0m[2m:[0m subscribe started [3mbroadcast[0m[2m=[0msmoke-rust-4053-30778.hang [3mtrack[0m[2m=[0m0.avc3
-[2m2026-11-26T18:09:22.362891Z[0m [32m INFO[0m [2mmoq_net::ietf::subscriber[0m[2m:[0m subscribe cancelled [3mbroadcast[0m[2m=[0msmoke-rust-4053-30778.hang [3mtrack[0m[2m=[0mcatalog.json
-[2m2026-11-26T18:09:22.362944Z[0m [32m INFO[0m [2mmoq_net::ietf::subscriber[0m[2m:[0m subscribe cancelled [3mbroadcast[0m[2m=[0msmoke-rust-4053-30778.hang [3mtrack[0m[2m=[0m0.avc3
-[2m2026-11-26T18:09:22.390628Z[0m [33m WARN[0m [2mmoq_net::ietf::session[0m[2m:[0m session error [3merr[0m[2m=[0munknown code=386759528
-[2m2026-11-26T18:09:22.391164Z[0m [33m WARN[0m [2mweb_transport_moq::session[0m[2m:[0m unknown capsule [3mtyp[0m[2m=[0m420171077 [3msize[0m[2m=[0m1
+[2m2026-11-27T17:54:44.918483Z[0m [32m INFO[0m [2mmoq_relay::cluster[0m[2m:[0m cluster initialized [3mhop_id[0m[2m=[0m8117690272441705 [3mconfigured[0m[2m=[0mfalse
+[2m2026-11-27T17:54:44.926512Z[0m [33m WARN[0m [2mmoq_sock::bind[0m[2m:[0m UDP receive buffer is smaller than requested; raise `net.core.rmem_max` or expect packet loss under load [3mwanted[0m[2m=[0m8388608 [3mgranted[0m[2m=[0m1048576
+[2m2026-11-27T17:54:44.926539Z[0m [33m WARN[0m [2mmoq_sock::bind[0m[2m:[0m UDP send buffer is smaller than requested; raise `net.core.wmem_max` or expect packet loss under load [3mwanted[0m[2m=[0m8388608 [3mgranted[0m[2m=[0m4194304
+[2m2026-11-27T17:54:44.934475Z[0m [32m INFO[0m [2mmoq_tokio::connection[0m[2m:[0m connecting [3mpeer[0m[2m=[0mhttps://fb.mvfst.net:9448
+[2m2026-11-27T17:54:44.935739Z[0m [32m INFO[0m [2mmoq_relay::cluster[0m[2m:[0m no cluster peers configured; running standalone
+[2m2026-11-27T17:54:45.093535Z[0m [32m INFO[0m [2mmoq_tokio::client[0m[2m:[0m connected [3mversion[0m[2m=[0mmoq-transport-16
+[2m2026-11-27T17:54:45.093574Z[0m [32m INFO[0m [2mmoq_tokio::connection[0m[2m:[0m connected [3mpeer[0m[2m=[0mhttps://fb.mvfst.net:9448
+[2m2026-11-27T17:54:45.108465Z[0m [32m INFO[0m [2mmoq_net::ietf::subscriber[0m[2m:[0m subscribe started [3mbroadcast[0m[2m=[0msmoke-rust-4270-14655.hang [3mtrack[0m[2m=[0mcatalog.json
+[2m2026-11-27T17:54:45.262840Z[0m [32m INFO[0m [2mmoq_net::ietf::subscriber[0m[2m:[0m subscribe started [3mbroadcast[0m[2m=[0msmoke-rust-4270-14655.hang [3mtrack[0m[2m=[0m0.avc3
+[2m2026-11-27T17:54:46.218955Z[0m [32m INFO[0m [2mmoq_net::ietf::subscriber[0m[2m:[0m subscribe cancelled [3mbroadcast[0m[2m=[0msmoke-rust-4270-14655.hang [3mtrack[0m[2m=[0mcatalog.json
+[2m2026-11-27T17:54:46.219011Z[0m [32m INFO[0m [2mmoq_net::ietf::subscriber[0m[2m:[0m subscribe cancelled [3mbroadcast[0m[2m=[0msmoke-rust-4270-14655.hang [3mtrack[0m[2m=[0m0.avc3
+[2m2026-11-27T17:54:46.232512Z[0m [33m WARN[0m [2mmoq_net::ietf::session[0m[2m:[0m session error [3merr[0m[2m=[0munknown code=386759528
+[2m2026-11-27T17:54:46.233219Z[0m [33m WARN[0m [2mweb_transport_moq::session[0m[2m:[0m unknown capsule [3mtyp[0m[2m=[0m420171077 [3msize[0m[2m=[0m1
 Error: Broken pipe (os error 32)

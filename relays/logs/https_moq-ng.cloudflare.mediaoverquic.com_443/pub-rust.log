@@ -1,12 +1,12 @@
-[2m2026-11-26T18:07:09.921533Z[0m [32m INFO[0m [2mmoq_relay::cluster[0m[2m:[0m cluster initialized [3mhop_id[0m[2m=[0m2422590742640705 [3mconfigured[0m[2m=[0mfalse
-[2m2026-11-26T18:07:09.924737Z[0m [33m WARN[0m [2mmoq_sock::bind[0m[2m:[0m UDP receive buffer is smaller than requested; raise `net.core.rmem_max` or expect packet loss under load [3mwanted[0m[2m=[0m8388608 [3mgranted[0m[2m=[0m1048576
-[2m2026-11-26T18:07:09.924753Z[0m [33m WARN[0m [2mmoq_sock::bind[0m[2m:[0m UDP send buffer is smaller than requested; raise `net.core.wmem_max` or expect packet loss under load [3mwanted[0m[2m=[0m8388608 [3mgranted[0m[2m=[0m4194304
-[2m2026-11-26T18:07:09.930643Z[0m [32m INFO[0m [2mmoq_tokio::connection[0m[2m:[0m connecting [3mpeer[0m[2m=[0mhttps://moq-ng.cloudflare.mediaoverquic.com
-[2m2026-11-26T18:07:09.930672Z[0m [32m INFO[0m [2mmoq_relay::cluster[0m[2m:[0m no cluster peers configured; running standalone
-[2m2026-11-26T18:07:10.179316Z[0m [32m INFO[0m [2mmoq_tokio::client[0m[2m:[0m connected [3mversion[0m[2m=[0mmoq-transport-22
-[2m2026-11-26T18:07:10.179343Z[0m [32m INFO[0m [2mmoq_tokio::connection[0m[2m:[0m connected [3mpeer[0m[2m=[0mhttps://moq-ng.cloudflare.mediaoverquic.com
-[2m2026-11-26T18:07:10.322871Z[0m [32m INFO[0m [2mmoq_net::ietf::publisher[0m[2m:[0m subscribe started [3mid[0m[2m=[0m1 [3mbroadcast[0m[2m=[0msmoke-rust-4053-7948.hang [3mtrack[0m[2m=[0mcatalog.json
-[2m2026-11-26T18:07:10.469722Z[0m [32m INFO[0m [2mmoq_net::ietf::publisher[0m[2m:[0m subscribe started [3mid[0m[2m=[0m5 [3mbroadcast[0m[2m=[0msmoke-rust-4053-7948.hang [3mtrack[0m[2m=[0mcatalog.json
-[2m2026-11-26T18:07:10.601859Z[0m [32m INFO[0m [2mmoq_net::ietf::publisher[0m[2m:[0m subscribe started [3mid[0m[2m=[0m7 [3mbroadcast[0m[2m=[0msmoke-rust-4053-7948.hang [3mtrack[0m[2m=[0m0.avc3
-[2m2026-11-26T18:07:10.814927Z[0m [32m INFO[0m [2mmoq_net::ietf::publisher[0m[2m:[0m subscribe started [3mid[0m[2m=[0m9 [3mbroadcast[0m[2m=[0msmoke-rust-4053-7948.hang [3mtrack[0m[2m=[0mcatalog.json
-[2m2026-11-26T18:07:10.947852Z[0m [32m INFO[0m [2mmoq_net::ietf::publisher[0m[2m:[0m subscribe started [3mid[0m[2m=[0m11 [3mbroadcast[0m[2m=[0msmoke-rust-4053-7948.hang [3mtrack[0m[2m=[0m0.avc3
+[2m2026-11-27T17:52:33.287012Z[0m [32m INFO[0m [2mmoq_relay::cluster[0m[2m:[0m cluster initialized [3mhop_id[0m[2m=[0m2674455568280726 [3mconfigured[0m[2m=[0mfalse
+[2m2026-11-27T17:52:33.291864Z[0m [33m WARN[0m [2mmoq_sock::bind[0m[2m:[0m UDP receive buffer is smaller than requested; raise `net.core.rmem_max` or expect packet loss under load [3mwanted[0m[2m=[0m8388608 [3mgranted[0m[2m=[0m1048576
+[2m2026-11-27T17:52:33.291890Z[0m [33m WARN[0m [2mmoq_sock::bind[0m[2m:[0m UDP send buffer is smaller than requested; raise `net.core.wmem_max` or expect packet loss under load [3mwanted[0m[2m=[0m8388608 [3mgranted[0m[2m=[0m4194304
+[2m2026-11-27T17:52:33.298339Z[0m [32m INFO[0m [2mmoq_relay::cluster[0m[2m:[0m no cluster peers configured; running standalone
+[2m2026-11-27T17:52:33.298443Z[0m [32m INFO[0m [2mmoq_tokio::connection[0m[2m:[0m connecting [3mpeer[0m[2m=[0mhttps://moq-ng.cloudflare.mediaoverquic.com
+[2m2026-11-27T17:52:33.571359Z[0m [32m INFO[0m [2mmoq_tokio::client[0m[2m:[0m connected [3mversion[0m[2m=[0mmoq-transport-22
+[2m2026-11-27T17:52:33.571392Z[0m [32m INFO[0m [2mmoq_tokio::connection[0m[2m:[0m connected [3mpeer[0m[2m=[0mhttps://moq-ng.cloudflare.mediaoverquic.com
+[2m2026-11-27T17:52:33.688956Z[0m [32m INFO[0m [2mmoq_net::ietf::publisher[0m[2m:[0m subscribe started [3mid[0m[2m=[0m1 [3mbroadcast[0m[2m=[0msmoke-rust-4270-22309.hang [3mtrack[0m[2m=[0mcatalog.json
+[2m2026-11-27T17:52:33.861106Z[0m [32m INFO[0m [2mmoq_net::ietf::publisher[0m[2m:[0m subscribe started [3mid[0m[2m=[0m5 [3mbroadcast[0m[2m=[0msmoke-rust-4270-22309.hang [3mtrack[0m[2m=[0mcatalog.json
+[2m2026-11-27T17:52:33.991611Z[0m [32m INFO[0m [2mmoq_net::ietf::publisher[0m[2m:[0m subscribe started [3mid[0m[2m=[0m7 [3mbroadcast[0m[2m=[0msmoke-rust-4270-22309.hang [3mtrack[0m[2m=[0m0.avc3
+[2m2026-11-27T17:52:34.454824Z[0m [32m INFO[0m [2mmoq_net::ietf::publisher[0m[2m:[0m subscribe started [3mid[0m[2m=[0m9 [3mbroadcast[0m[2m=[0msmoke-rust-4270-22309.hang [3mtrack[0m[2m=[0mcatalog.json
+[2m2026-11-27T17:52:34.571959Z[0m [32m INFO[0m [2mmoq_net::ietf::publisher[0m[2m:[0m subscribe started [3mid[0m[2m=[0m11 [3mbroadcast[0m[2m=[0msmoke-rust-4270-22309.hang [3mtrack[0m[2m=[0m0.avc3

@@ -1,7 +1,7 @@
 [
   {
-    "generated": "2026-11-26T18:11:55Z",
-    "run_url": "https://github.com/dignakov/moq/actions/runs/45872324836",
+    "generated": "2026-11-27T17:57:19Z",
+    "run_url": "https://github.com/dignakov/moq/actions/runs/46044250124",
     "endpoints": {
       "moqt://aiomoqt-relay.marzresearch.net:4443": {
         "ok": true,
